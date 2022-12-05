@@ -16,9 +16,6 @@ addMemberBtn.addEventListener("click",
         let  inputName = document.getElementById("name").value;
         let  inputRole = document.getElementById("role").value;
         let  inputImg = document.getElementById("image").value;
-        // console.log(inputName);
-        // console.log(inputRole);
-        // console.log(inputImg);
         let newMember = {
             "immagine":(inputImg),
             "nome" : (inputName),
@@ -32,10 +29,7 @@ addMemberBtn.addEventListener("click",
         TeamCont.innerHTML += `
         <div class="team-card">
             <div class="card-image">
-                <img
-                    src="${inputImg}"
-                    alt="${inputName}"
-                />
+                <img src="${inputImg} "alt="${inputName}"/>
                 </div>
                 <div class="card-text">
                 <h3>${inputName}</h3>
